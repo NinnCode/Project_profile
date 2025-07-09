@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Nin Nichi | Academic</title>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <aside class="search-modal" id="search">
+        <div class="container">
+            <section class="search-header">
+                <div class="row no-gutters justify-content-between mb-3">
+                    <div class="col-6">
+                        <h1>Search</h1>
+                    </div>
+                    <div class="col-6 col-search-close">
+                        <a class="js-search-close" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div id="search-box">
+                    <input name="q" id="search-query" placeholder="Search..." autocapitalize="off" autocomplete="off"
+                        autocorrect="off" spellcheck="false" type="search" class="form-control" aria-label="Search...">
+                </div>
+            </section>
+            <section class="section-search-results">
+                <div id="search-hits">
+                    <!-- Search results will appear here -->
+                    <p>Search functionality needs Fuse.js and data source.</p>
+                </div>
+            </section>
+        </div>
+    </aside>
+
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <!-- name/logo website -->
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+
+                    <!-- button menu on mobile -->
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+
+                    <!-- name/logo website on mobile -->
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+
+                    <!-- items menu -->
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="#about"><span>Home</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects"><span>Projects</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact"><span>Contact</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Icons on the right -->
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <!-- Theme Toggler -->
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle theme"
+                                aria-label="Toggle theme">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="page-body">
+        <span class="js-widget-page d-none"></span>
+
+        <section id="about" class="home-section wg-about-biography">
+            <div class="home-section-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div id="profile">
+                            <img class="avatar avatar-circle" width="270" height="270" src="./img/avatar_nin.jpg"
+                                alt="Avatar">
+                            <div class="portrait-title">
+                                <h2>Nhat Ninh</h2>
+                                <h3>Student in the field of Electronics and Telecommunications Engineering</h3>
+                                <h3><a href="https://hcmus.edu.vn/" target="_blank" rel="noopener"><span>VNUHCM-US |
+                                            HCMUS</span></a></h3>
+                            </div>
+                            <ul class="network-icon" aria-hidden="true">
+                                <li><a href="#contact" aria-label="envelope"><i
+                                            class="fas fa-envelope big-icon"></i></a></li>
+                                <li><a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                                        aria-label="facebook"><i class="fab fa-facebook big-icon"></i></a></li>
+                                <li><a href="https://github.com/NinNichiCode" target="_blank" rel="noopener"
+                                        aria-label="github"><i class="fab fa-github big-icon"></i></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <h1>Biography</h1>
+                        <div class="article-style">
+                            <ul>
+                                <li>Welcome to my website. Hello World from 10.7769° 106.7009° 🌏 </li>
+                                <li><i class="fas fa-graduation-cap"></i> I am a senior undergraduate student at the <a
+                                        href="https://hcmus.edu.vn/" target="_blank" rel="noopener">VNUHCM - University
+                                        Of Science </a>. My academic interests include
+                                    embedded systems, digital design, secure communication protocols and Semiconductor.
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>To me, engineering is not just solving problems,
+                                    it’s designing how the future works — securely, efficiently, and beautifully.
+                                </li>
+                            </ul>
+                        </div>
+
+                            <h3 style="margin-top: 3.0rem;">Knowledge & skill</h3>
+                            <div class="article-style">
+                                <ul class="ul-interests fa-ul mb-0">
+                                    <li><i class="fa-li fa-solid fa-code"></i><strong>Software:</strong> C, C#, Python,
+                                        HTML, CSS, JavaScript, Bash, Shell scripting</li>
+                                    <li><i class="fa-li fa-solid fa-microchip"></i><strong>Hardware:</strong> Verilog,
+                                        SystemVerilog, UVM, PCB Design</li>
+                                    <li><i class="fa-li fa-solid fa-desktop"></i><strong>MCU & FPGA:</strong> Arduino,
+                                        STM32, ESP32, DE10 Standard,...</li>
+                                    <li><i class="fa-li fa-solid fa-tools"></i><strong>Tools:</strong> EasyEDA, MATLAB, VSCode,
+                                        Vivado, QuestaSim, Synopsys ICC2,...</li>
+                                    <li><i class="fa-li fa-solid fa-people-group"></i><strong>Soft Skills:</strong>
+                                        Communication, teamwork, and project management,...</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="projects" class="home-section wg-portfolio">
+            <div class="home-section-bg"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="section-heading col-12 mb-3 text-center">
+                        <h1 class="mb-0">Projects</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="project-toolbar">
+                            <div class="project-filters">
+                                <div class="btn-toolbar d-flex justify-content-center">
+                                    <div class="btn-group flex-wrap">
+                                        <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
+                                        <a href="#" data-filter=".js-id-ai" class="btn btn-primary btn-lg">Computer
+                                            vision</a>
+                                        <a href="#" data-filter=".js-id-biomedical"
+                                            class="btn btn-primary btn-lg">Biomedical Electronics</a>
+                                        <a href="#" data-filter=".js-id-management-system"
+                                            class="btn btn-primary btn-lg">Application</a>
+                                        <a href="#" data-filter=".js-id-robotics"
+                                            class="btn btn-primary btn-lg">Robotics</a>
+                                        <a href="#" data-filter=".js-id-hardware-engineering"
+                                            class="btn btn-primary btn-lg">circuit and VLSI Design</a>
+                                        <a href="#" data-filter=".js-id-other" class="btn btn-primary btn-lg">Other</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="isotope projects-container row js-layout-row project-showcase">
+                            <!-- Project Item 1 -->
+                            <div class="col-12 isotope-item js-id-ai">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-qr-code.html">QR Code and Multiple-Choice
+                                                    Answer Sheet Image Processing </a>
+                                            </div>
+
+                                            <div class="article-style">
+                                                <p>    A Computer Vision project to process noisy, distorted QR codes
+                                                    and automatically
+                                                    grade multiple-choice answer sheets using Python. </p>
+                                                <p><i>[November, 2024 - January, 2025]</i></p>
+                                                <p>Team size: 3 | My role: Team Leader</p>
+                                            </div>
+
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-qr-code.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-qr-code.html">
+                                                <img src="./img/result_distorted_QR.png" alt="QR Code Project"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- The Modal (Lightbox) -->
+                                <div id="imageModal" class="modal">
+                                    <span class="close-modal">×</span>
+                                    <img class="modal-content" id="img01">
+                                    <div id="caption"></div>
+                                </div>
+                            </div>
+                            <!-- Project Item 2 -->
+                            <div class="col-12 isotope-item js-id-ai">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <!-- Link đến trang chi tiết -->
+                                                <a href="projects/project-Attendance.html">Personal Project: QR Code
+                                                    Attendance App</a>
+                                            </div>
+                                            <div class="article-style">
+                                                <p>    Designed and developed a simple QR code-based attendance
+                                                    application to support lecturers in recording student attendance
+                                                    efficiently.
+                                                    This personal project provides an alternative to traditional
+                                                    roll-calling or using additional hardware like student ID scanners.
+                                                </p>
+                                                <p><i>[December, 2024 - January, 2025]</i></p>
+                                            </div>
+
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-Attendance.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-Attendance.html">
+                                                <img src="./img/Attendance1.png" alt="QR Code Project" loading="lazy"
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Biomedical EMG & ECG -->
+                            <div class="col-12 isotope-item js-id-biomedical">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-emg-ecg.html">Biomedical Circuit Design for
+                                                    EMG & ECG Measurement</a>
+                                            </div>
+                                            <div class="article-style">
+                                                <p>    A final-year biomedical electronics project focused on designing
+                                                    an analog circuit that can measure both muscle (EMG) and heart (ECG)
+                                                    signals on a breadboard.</p>
+                                                <p><i>[November, 2024 - January, 2025]</i></p>
+                                                <p>Team size: 5 | My role: Team Leader</p>
+                                            </div>
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-emg-ecg.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-emg-ecg.html">
+                                                <img src="./img/Biomedical0.png" alt="EMG ECG Circuit Project"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--       Project Application: CYCLE REPETITION LEARNING APP   -->
+                            <div class="col-12 isotope-item js-id-management-system">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+
+                                        <!-- left content -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-cycle-repetition-app.html">Cycle Repetition
+                                                    English Learning App</a>
+                                            </div>
+
+                                            <div class="article-style">
+                                                <p>    A C# and WPF desktop application designed to help users learn
+                                                    English vocabulary and sentences by combining Spaced Repetition and
+                                                    Pomodoro techniques.</p>
+                                                <p><i>[April, 2024 - June, 2024]</i></p>
+                                                <p>Team size: 4 | My role: Team Leader</p>
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-cycle-repetition-app.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-cycle-repetition-app.html">
+                                                <img src="./img/en_cycle_app1.png" alt="Cycle Repetition App"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--                    CLIPBOARD TRANSLATOR APP                -->
+                            <div class="col-12 isotope-item js-id-management-system">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+
+                                        <!-- left content -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-clipboard-translator.html">Personal Project:
+                                                    Clipboard
+                                                    Translator & Vocabulary Saver</a>
+                                            </div>
+
+                                            <!-- -->
+                                            <div class="article-style">
+                                                <p>    A Python-based personal project that instantly translates English
+                                                    text from the clipboard and saves vocabulary for later review, using
+                                                    global keyboard shortcuts.</p>
+                                                <p><i>[April, 2025 - May, 2025]</i></p>
+                                            </div>
+
+                                            <!--  "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-clipboard-translator.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- img -->
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-clipboard-translator.html">
+                                                <img src="./img/clipboard_trans0.png" alt="Clipboard Translator App"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                         LINE FOLLOWER ROBOT                -->
+                            <div class="col-12 isotope-item js-id-robotics">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-line-follower-robot.html">Line Follower Robot
+                                                    with Obstacle Avoidance</a>
+                                            </div>
+                                            <div class="article-style">
+                                                <p>    Designed and built an autonomous robot using Arduino Uno R3 that
+                                                    follows a black line and stops upon detecting an obstacle. </p>
+                                                <p><i>[March, 2023 - April, 2023]</i></p>
+                                                <p>Team size: 3 | My role: Team Leader</p>
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-line-follower-robot.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-line-follower-robot.html">
+                                                <img src="./img/Robot_Line2.jpg" alt="Line Follower Robot"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                         ROBOTIC ARM CONTROL                -->
+                            <div class="col-12 isotope-item js-id-robotics">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-robotic-arm.html">Bluetooth-Controlled Robotic
+                                                    Arm via C# Application</a>
+                                            </div>
+                                            <div class="article-style">
+                                                <p>    A comprehensive project involving hardware design, PCB layout,
+                                                    embedded programming for an STM32-based robotic arm, and a C#
+                                                    desktop application for wireless control via Bluetooth.
+                                                </p>
+                                                <p><i>[April, 2023 - June, 2023]</i></p>
+                                                <p>Team size: 5 | My role: Team Leader</p>
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-robotic-arm.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-robotic-arm.html">
+                                                <img src="./img/robot_arm3.png" alt="Bluetooth Robotic Arm"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--             VOICE CONTROLLED CAR (MFCC)                    -->
+                            <div class="col-12 isotope-item js-id-robotics">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-voice-car.html">Voice-Controlled Car with
+                                                    Custom Speech Recognition (MFCC)</a>
+                                            </div>
+
+                                            <div class="article-style">
+                                                <p>    An advanced Microcontroller project to control a model car via a
+                                                    custom Android app. The core feature is a from-scratch speech
+                                                    recognition system implemented on an STM32F4, using the MFCC
+                                                    algorithm without external libraries.
+                                                </p>
+                                                <p><i>[May, 2023 - July, 2023]</i></p>
+                                                Team size: 3 | My role: Member
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-voice-car.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-voice-car.html">
+                                                <img src="./img/robot_voice4.png" alt="Voice Controlled Car"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--       AUDIO AMPLIFIER DESIGN                  -->
+                            <div class="col-12 isotope-item js-id-hardware-engineering">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-audio-amplifier.html">MOSFET Audio Amplifier
+                                                    and Power Supply Design</a>
+                                            </div>
+
+                                            <div class="article-style">
+                                                <p>    A comprehensive electronics design project involving the
+                                                    simulation, PCB layout, and implementation of a MOSFET-based audio
+                                                    amplifier and a dual power supply circuit.</p>
+                                                <p><i>[March, 2024 - April, 2024]</i></p>
+                                                Team size: 2 | My role: Partner
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-audio-amplifier.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-audio-amplifier.html">
+                                                <img src="./img/Amplifier12.png" alt="Audio Amplifier Project"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--            VLSI UART IP CORE DESIGN          -->
+                            <div class="col-12 isotope-item js-id-hardware-engineering">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-uart-vlsi.html">Personal Project: VLSI Design
+                                                    of a UART IP Core
+                                                    with FIFO and Security</a>
+                                            </div>
+
+                                            <div class="article-style">
+                                                <p>    A personal project focused on designing a modern UART IP core
+                                                    from the ground up, featuring integrated FIFOs and an experimental
+                                                    LFSR-based keystream generator for data security, simulated in
+                                                    Vivado.</p>
+                                                <p><i>[February, 2025 - April, 2025]</i></p>
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-uart-vlsi.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-uart-vlsi.html">
+                                                <img src="./img/vlsi1.png" alt="UART IP Core Block Diagram"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 isotope-item js-id-hardware-engineering">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="project-box-body">
+                                                <h5 class="project-box-title">
+                                                    <a href="projects/automated-packaging-machine.html">Automated Fruit
+                                                        Foam Sleeve Packaging Machine</a>
+                                                </h5>
+                                                <p>
+                                                    This was a research and prototyping project developed during the time of
+                                                    the startup.
+                                                    The goal was to create a model for an automated machine that prepares
+                                                    foam fruit sleeves, addressing the time-consuming manual labor faced by
+                                                    farmers.
+                                                </p>
+                                                <a class="btn btn-outline-primary btn-sm mt-2"
+                                                    href="projects/automated-packaging-machine.html">
+                                                    View Project Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/automated-packaging-machine.html">
+                                                <img src="./img/auto_package12.jpg" alt="game-observation"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="home-section wg-contact">
+            <div class="home-section-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                        <h1 class="mb-0">Get In Touch</h1>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <p>I’m interested in opportunities in PCB, Hardware Engineering and
+                            Semiconductor. Feel free to reach out to me for any questions or collaborations!</p>
+
+                        <!-- Form contact -->
+                        <div class="mb-3">
+                            <form method="post" name="contact" data-netlify="true">
+                                <div class="form-group form-inline"><input type="text" name="name"
+                                        class="form-control w-100" id="inputName" placeholder="Name" required></div>
+                                <div class="form-group form-inline"><input type="email" name="email"
+                                        class="form-control w-100" id="inputEmail" placeholder="Email" required></div>
+                                <div class="form-group"><textarea name="message" class="form-control" id="inputMessage"
+                                        rows="5" placeholder="Message" required></textarea></div>
+                                <button type="submit" class="btn btn-primary px-3 py-2 w-100">Send Message</button>
+                            </form>
+                        </div>
+
+                        <ul class="fa-ul">
+                            <!-- Email -->
+                            <li>
+                                <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+                                <span id="person-email"><a
+                                        href="mailto:ninh121nvc@gmail.com">ninhdoannhat@gmail.com</a></span>
+                            </li>
+
+                            <!-- Address -->
+                            <li>
+                                <i class="fa-li fas fa-map-marker-alt fa-2x" aria-hidden="true"></i>
+                                <span id="person-address">Ho Chi Minh City, Vietnam</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div><!-- End page-body -->
+
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+
+                <p class="copyright-license-text">
+                    © 2025 Ninh Doan Nhat. All Rights Reserved.
+                </p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </p>
+
+                <p class="powered-by">
+                    Design inspired by Wowchemy
+                </p>
+
+            </footer>
+        </div>
+    </div>
+
+
+    <!--                   FILE JAVASCRIPT                          -->
+    <!-- 1. jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- 2. Popper.js and Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- 3.  Isotope (isotope.pkgd) -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- 4. File script -->
+    <script src="js/script.js"></script>
+
+</body> 
+
+</html> 
